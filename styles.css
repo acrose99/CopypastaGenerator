@@ -1,0 +1,21 @@
+#navySeal * {
+    font-family: monospace;
+}
+#navySeal h1 {
+    font-size: 150%;
+    font-weight: bold;
+}
+#navySeal h2 {
+    font-size: 125%;
+    font-weight: normal;
+}
+#navySeal .tied {
+    background-color: #cccccc;
+}
+#navySeal form .line {
+    margin-bottom: 0.5em;
+}
+#navySeal form input.long {
+    width: 50em;
+    max-width: 100%;
+}
