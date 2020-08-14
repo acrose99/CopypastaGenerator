@@ -9,3 +9,9 @@ doc
 l
 
 
+/.editorconfig
+/.htaccess
+/browserconfig.xml
+/humans.txt
+/LICENSE.txt
+/robots.txt
