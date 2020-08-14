@@ -1,86 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script type="application/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script type="application/javascript" src=" copypasta.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <title>Navy Seal Copypasta</title>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          src="https://code.jquery.com/jquery-1.12.4.min.js" type="application/javascript"></script>
+  <script src="/js/main.js" type="application/javascript"></script>
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+  <link href="/css/main.css" rel="stylesheet" type="text/css"/>
+  <title>Navy Seal Copypasta</title>
 </head>
 <body id="navySeal">
-<h1>Navy Seal Copypasta Generator</h1>
-<img src="https://external-preview.redd.it/929-SjjzJ0Ko3AXjvSfIqjecsBokQF9IL2pB1_s17X8.gif?format=png8&s=5689297dbe4fb4ba1b8dea6cbd8cada06f4bee91">
-<h2>Fields</h2>
-<form action="#">
+<div class="intro">
+  <h1>Navy Seal Copypasta Generator</h1>
+  <img class="logo" src="img/Logo_Naval_Special_Warfare_Development_Group.svg"
+    alt="https://upload.wikimedia.org/wikipedia/commons/2/2e/Logo_Naval_Special_Warfare_Development_Group.svg">
+</div>
+<h2 class="header">Fields</h2>
+<form action="#" class="generator">
+  <div class="fields">
     <div class="line">
-        <label for="fill-person">What the fuck did you just fucking say about me</label>
-        <input type="text" value="you little bitch" id="fill-person"/>
+      <label class="fieldCopypasta" for="fill-person">What the fuck did you just fucking say about me</label></div>
+    <div class="line">
+      <label class="fieldCopypasta" for="fill-graduated">I graduated top of my class in the</label>
     </div>
     <div class="line">
-        <label for="fill-graduated">I graduated top of my class in the</label>
-        <input type="text" value="Navy Seals" id="fill-graduated"/>
+      <label class="fieldCopypasta" for="fill-raids">I've been involved in numerous secret raids on</label>
     </div>
     <div class="line">
-        <label for="fill-raids">I've been involved in numerous secret raids on</label>
-        <input type="text" value="Al-Quaeda" id="fill-raids"/>
+      <label class="fieldCopypasta" for="fill-number">and I have over</label>
     </div>
     <div class="line">
-        <label for="fill-number">and I have over</label>
-        <input type="text" id="fill-number" value="300 confirmed kills"/>
+      <label class="fieldCopypasta" for="fill-trained">I am trained in</label>
     </div>
     <div class="line">
-        <label for="fill-trained">I am trained in</label>
-        <input type="text" id="fill-trained" value="gorilla warfare"/>
+      <label class="fieldCopypasta" for="fill-top">and I'm the top</label>
     </div>
     <div class="line">
-        <label for="fill-top">and I'm the top</label>
-        <input type="text" id="fill-top" value="sniper in the entire US armed forces"/>
+      <label class="fieldCopypasta" for="fill-target">You are nothing to me but just another</label>
     </div>
     <div class="line">
-        <label for="fill-target">You are nothing to me but just another</label>
-        <input type="text" id="fill-target" value="target"/>
+      <label class="fieldCopypasta" for="fill-contact">I am contacting my</label>
     </div>
     <div class="line">
-        <label for="fill-contact">I am contacting my</label>
-        <input type="text" value="secret network of spies across the USA" id="fill-contact"/>
+      <label class="fieldCopypasta" for="fill-methods">I can</label>
     </div>
     <div class="line">
-        <label for="fill-methods">I can</label>
-        <input type="text" value="kill you in over seven hundred ways" id="fill-methods"/>
+      <label class="fieldCopypasta" for="fill-withJust">and that's just with my</label>
     </div>
     <div class="line">
-        <label for="fill-withJust">and that's just with my</label>
-        <input type="text" value="bare hands" id="fill-withJust"/>
+      <label class="fieldCopypasta" for="fill-extensive">Not only am I extensively</label>
     </div>
     <div class="line">
-        <label for="fill-extensive">Not only am I extensively</label>
-        <input type="text" value="trained in unarmed combat" id="fill-extensive"/>
+      <label class="fieldCopypasta" for="fill-but">but I have access to</label>
     </div>
     <div class="line">
-        <label for="fill-but">but I have access to</label>
-        <input type="text" value="the entire arsenal of the United States Marine Corps" id="fill-but" class="long"/>
+      <label class="fieldCopypasta" for="fill-use"> and I will use it to its full extent to</label>
     </div>
-    <div class="line">
-        <label for="fill-use">and I will use it to its full extent to</label>
-        <input type="text" value="wipe your miserable ass off the face of the continent, you little shit." id="fill-use" class="long"/>
-    </div>
+  </div>
+  <div class="inputs">
+    <input class="inputCopypasta" id="fill-person" type="text" value="you little bitch"/>
+    <input class="inputCopypasta" id="fill-graduated" type="text" value="Navy Seals"/>
+    <input class="inputCopypasta" id="fill-raids" type="text" value="Al-Quaeda"/>
+    <input class="inputCopypasta" id="fill-number" type="text" value="300 confirmed kills"/>
+    <input class="inputCopypasta" id="fill-trained" type="text" value="gorilla warfare"/>
+    <input class="inputCopypasta" id="fill-top" type="text" value="sniper in the entire US armed forces"/>
+    <input class="inputCopypasta" id="fill-target" type="text" value="target"/>
+    <input class="inputCopypasta" id="fill-contact" type="text" value="secret network of spies across the USA"/>
+    <input class="inputCopypasta" id="fill-methods" type="text" value="kill you in over seven hundred ways"/>
+    <input class="inputCopypasta" id="fill-withJust" type="text" value="bare hands"/>
+    <input class="inputCopypasta" id="fill-extensive" type="text" value="trained in unarmed combat"/>
+    <input class="inputCopypasta" class="long" id="fill-but" type="text"
+           value="the entire arsenal of the United States Marine Corps"/>
+    <input class="inputCopypasta" class="long"
+           id="fill-use" type="text" value="wipe your miserable ass off the face of the continent, you little shit."/>
+  </div>
 </form>
-<h2>Your Copypasta</h2>
+<h1 class="header">Your Copypasta:</h1>
+<div class="copypastaText">
+  <div class="thread">
 
-<p>What the fuck did you just fucking say about me
-    <span class="tied tied-person">you little bitch</span>? I'll have you know I graduated top of my class in the
-    <span class="tied tied-graduated">Navy Seals</span> and I've been involved in numerous secret raids on
-    <span class="tied tied-raids">Al-Quaeda</span> and I have over
-    <span class="tied tied-number">300 confirmed kills</span>. I am trained in
-    <span class="tied tied-trained">gorilla warfare</span> and I'm the top
-    <span class="tied tied-top">sniper in the entire US armed forces</span>. You are nothing to me but just another
-    <span class="tied tied-target">target</span>. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my
-    <span class="tied tied-contact">secret network of spies across the USA</span> and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can
-    <span class="tied tied-methods">kill you in over seven hundred ways</span> and that's just with my
-    <span class="tied tied-withJust">bare hands</span>. Not only am I extensively
-    <span class="tied tied-extensive">trained in unarmed combat</span>, but I have access to
-    <span class="tied tied-but">the entire arsenal of the United States Marine Corps</span>and I will use it to its full extent to
-    <span class="tied tied-use">wipe your miserable ass off the face of the continent, you little shit</span>. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.
-</p>
+    <div class="fileheading">
+    <span>
+      <img alt="" class="posticon" src="img/post_expand_minus.png">
+    </span>
+      <span class="file">File:</span> <span>NavySeals.jpeg (2.09 MB, 3264x2448)</span>
+    </div>
+    <div class="post">
+      <input type="checkbox" value="delete">
+      <span class="name">Operator</span>
+      <span class="dateTime" data-utc="1309130656">06/26/11(Sun)23:24:16</span>
+      <span class="desktop-options"><span class="desktop-options" title="Link to this post">No.</span><span
+        title="Reply to this post">15396072</span>
+        <img alt="Sticky" class="stickyIcon retina" src="img/sticky.gif"
+             title="Sticky"> <img alt="Closed" class="closedIcon retina"
+                                             src="img/closed.gif"
+                                             title="Closed"> &nbsp; <span>[<a
+
+          class="replylink">Reply</a>]</span></span>
+    </div>
+      <div class="ihavenoideawhattocallthis">
+        <img alt="https://i.ytimg.com/vi/NsZMbs5PC64/maxresdefault.jpg" class="thumbnail" src="img/OPERATOR.jpeg">
+        <div class="copy-button" data-clipboard-target="#copypasta-main-text">
+          <h3>Copy to Clipboard!</h3>
+          <button class="btn iconify" data-icon="clarity:copy-to-clipboard-line" data-inline="false" data-clipboard-action="copy" data-clipboard-target="#copypasta-main-text" id="btn">
+<!--            <span class="iconify" data-icon="clarity:copy-to-clipboard-line" data-inline="false"></span>-->
+          </button>
+        </div>
+      </div>
+      <p id="copypasta-main-text">What the fuck did you just fucking say about me
+        <span class="tied tied-person">you little bitch</span>? I'll have you know I graduated top of my class in the
+        <span class="tied tied-graduated">Navy Seals</span> and I've been involved in numerous secret raids on
+        <span class="tied tied-raids">Al-Quaeda</span> and I have over
+        <span class="tied tied-number">300 confirmed kills</span>. I am trained in
+        <span class="tied tied-trained">gorilla warfare</span> and I'm the top
+        <span class="tied tied-top">sniper in the entire US armed forces</span>. You are nothing to me but just another
+        <span class="tied tied-target">target</span>. I will wipe you the fuck out with precision the likes of which has
+        never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to
+        me
+        over the Internet? Think again, fucker. As we speak I am contacting my
+        <span class="tied tied-contact">secret network of spies across the USA</span> and your IP is being traced right
+        now
+        so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your
+        life.
+        You're fucking dead, kid. I can be anywhere, anytime, and I can
+        <span class="tied tied-methods">kill you in over seven hundred ways</span> and that's just with my
+        <span class="tied tied-withJust">bare hands</span>. Not only am I extensively
+        <span class="tied tied-extensive">trained in unarmed combat</span>, but I have access to
+        <span class="tied tied-but">the entire arsenal of the United States Marine Corps </span>and I will use it to its
+        full
+        extent to
+        <span class="tied tied-use">wipe your miserable ass off the face of the continent, you little shit</span>. If
+        only
+        you could have known what unholy retribution your little "clever" comment was about to bring down upon you,
+        maybe
+        you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you
+        goddamn
+        idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.
+      </p>
+    </div>
+    <div class="replycontainer">
+      <div class="sideArrows" id="sa22651024">&gt;&gt;</div>
+      <div class="reply">
+        <input type="checkbox" value="delete">
+        <span class="name">Flunky2k</span>
+        <span class="dateTime" data-utc="1309130656">8/14/2020(Fri)14:32:036 </span>
+        <span class="desktop-options"><span class="desktop-options" title="Link to this post">No. 2000</span></span>
+        <div>
+          <p>
+            If you liked this, please check out my <a href="https://github.com/acrose99">Github</a> or <a
+            href="https://twitter.com/FlunkyBot">Twitter</a> for more!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const clipboard = new ClipboardJS('.btn');
+</script>
 </body>
