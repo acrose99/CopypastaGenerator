@@ -120,6 +120,9 @@ body {
   padding: 2px;
 
 }
+.replylink {
+  margin-left: 10px;
+}
 .sideArrows {
   color: #b7c5d9;
   float: left;
