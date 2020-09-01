@@ -12,7 +12,7 @@
   <meta content="" property="og:image">
 
   <link href="site.webmanifest" rel="manifest">
-<!--  <link href="favicon.ico" rel="icon" type="image/x-icon"/>-->
+  <!--  <link href="favicon.ico" rel="icon" type="image/x-icon"/>-->
   <link href="icon.png" rel="apple-touch-icon">
 
   <link href="css/normalize.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
   <script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
           src="https://code.jquery.com/jquery-1.12.4.min.js" type="application/javascript"></script>
-  <script type="application/javascript" src="js/main.js" type="application/javascript"></script>
+  <script type="application/javascript" src="js/main.js"></script>
   <script type="application/javascript" src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 </head>
@@ -30,9 +30,69 @@
 <div class="intro">
   <h1>Navy Seal Copypasta Generator</h1>
   <img class="logo" alt="https://upload.wikimedia.org/wikipedia/commons/2/2e/Logo_Naval_Special_Warfare_Development_Group.svg" src="img/Logo_Naval_Special_Warfare_Development_Group.svg"
-    alt="https://upload.wikimedia.org/wikipedia/commons/2/2e/Logo_Naval_Special_Warfare_Development_Group.svg">
+       alt="https://upload.wikimedia.org/wikipedia/commons/2/2e/Logo_Naval_Special_Warfare_Development_Group.svg">
 </div>
-<h2 class="header">Fields</h2>
+<div id="header">
+  <h2 class="header-fields">Fields</h2>
+  <h2 class="header-title">Presets:</h2>
+  <div id="burger-container" onclick="burgerClickOn()" class="presets">
+    <div  class="burger" id="burger-1"></div>
+    <div class="burger" id="burger-2"></div>
+    <div class="burger" id="burger-3"></div>
+    <div id="burgerMenu" >
+      <ul>
+        <li onclick="variantChange('original')" class="BurgerMenu-Link">
+          Original
+        </li>
+        <li onclick="variantChange('christian')" class="BurgerMenu-Link">
+          Christian Evangelist Variant
+        </li>
+        <li onclick="variantChange('hacker')" class="BurgerMenu-Link">
+          Hacker Variant
+        </li>
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Pirate Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Ned Flanders Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Medieval Crusader Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Polite Gentleman Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Minecraft Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          SSBB Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          DC Comics Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Star Wars Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Shrek Crusader Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Kindergarden Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Camelot Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Hipster Variant-->
+<!--        </li>-->
+<!--        <li class="BurgerMenu-Link">-->
+<!--          Death Note Variant-->
+<!--        </li>-->
+      </ul>
+    </div>
+  </div>
+</div>
 <form action="#" class="generator">
   <div class="fields">
     <div class="line">
@@ -109,65 +169,152 @@
       <span class="desktop-options"><span class="desktop-options" title="Link to this post">No.</span><span
         title="Reply to this post">15396072</span><span><a
 
-          class="replylink">[Reply</a>]</span></span>
+        class="replylink">[Reply</a>]</span></span>
     </div>
-      <div class="ihavenoideawhattocallthis">
-        <img alt="https://i.ytimg.com/vi/NsZMbs5PC64/maxresdefault.jpg" class="thumbnail" src="img/OPERATOR.jpeg">
-        <div class="copy-button" data-clipboard-target="#copypasta-main-text">
-          <h3>Copy to Clipboard!</h3>
-          <button class="btn iconify" data-icon="clarity:copy-to-clipboard-line" data-inline="false" data-clipboard-action="copy" data-clipboard-target="#copypasta-main-text" id="btn">
-<!--            <span class="iconify" data-icon="clarity:copy-to-clipboard-line" data-inline="false"></span>-->
-          </button>
-        </div>
+    <div class="ihavenoideawhattocallthis">
+      <img alt="https://i.ytimg.com/vi/NsZMbs5PC64/maxresdefault.jpg" class="thumbnail" src="img/OPERATOR.jpeg">
+      <div class="copy-button" data-clipboard-target="#copypasta-main-text">
+        <h3>Copy to Clipboard!</h3>
+        <button class="btn iconify" data-icon="clarity:copy-to-clipboard-line" data-inline="false" data-clipboard-action="copy" data-clipboard-target="#copypasta-main-text" id="btn">
+          <!--            <span class="iconify" data-icon="clarity:copy-to-clipboard-line" data-inline="false"></span>-->
+        </button>
       </div>
-      <p id="copypasta-main-text">What the fuck did you just fucking say about me
-        <span class="tied tied-person">you little bitch</span>? I'll have you know I graduated top of my class in the
-        <span class="tied tied-graduated">Navy Seals</span> and I've been involved in numerous secret raids on
-        <span class="tied tied-raids">Al-Quaeda</span> and I have over
-        <span class="tied tied-number">300 confirmed kills</span>. I am trained in
-        <span class="tied tied-trained">gorilla warfare</span> and I'm the top
-        <span class="tied tied-top">sniper in the entire US armed forces</span>. You are nothing to me but just another
-        <span class="tied tied-target">target</span>. I will wipe you the fuck out with precision the likes of which has
-        never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to
-        me
-        over the Internet? Think again, fucker. As we speak I am contacting my
-        <span class="tied tied-contact">secret network of spies across the USA</span> and your IP is being traced right
-        now
-        so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your
-        life.
-        You're fucking dead, kid. I can be anywhere, anytime, and I can
-        <span class="tied tied-methods">kill you in over seven hundred ways</span> and that's just with my
-        <span class="tied tied-withJust">bare hands</span>. Not only am I extensively
-        <span class="tied tied-extensive">trained in unarmed combat</span>, but I have access to
-        <span class="tied tied-but">the entire arsenal of the United States Marine Corps </span> and I will use it to its
-        full
-        extent to
-        <span class="tied tied-use">wipe your miserable ass off the face of the continent, you little shit</span>. If
-        only
-        you could have known what unholy retribution your little "clever" comment was about to bring down upon you,
-        maybe
-        you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you
-        goddamn
-        idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.
-      </p>
     </div>
-    <div class="replycontainer">
-      <div class="sideArrows" id="sa22651024">&gt;&gt;</div>
-      <div class="reply">
-        <input type="checkbox" value="delete">
-        <span class="name">Flunky2k</span>
-        <span class="dateTime" data-utc="1309130656">8/14/2020(Fri)14:32:036 </span>
-        <span class="desktop-options"><span class="desktop-options" title="Link to this post">No. 2000</span></span>
-        <div>
-          <p>
-            If you liked this, please check out my <a href="https://github.com/acrose99">Github</a> or <a
-            href="https://twitter.com/FlunkyBot">Twitter</a> for more!
-          </p>
-        </div>
+    <p id="copypasta-main-text">What the fuck did you just fucking say about me
+      <span class="tied tied-person">you little bitch</span>? I'll have you know I graduated top of my class in the
+      <span class="tied tied-graduated">Navy Seals</span> and I've been involved in numerous secret raids on
+      <span class="tied tied-raids">Al-Quaeda</span> and I have over
+      <span class="tied tied-number">300 confirmed kills</span>. I am trained in
+      <span class="tied tied-trained">gorilla warfare</span> and I'm the top
+      <span class="tied tied-top">sniper in the entire US armed forces</span>. You are nothing to me but just another
+      <span class="tied tied-target">target</span>. I will wipe you the fuck out with precision the likes of which has
+      never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to
+      me
+      over the Internet? Think again, fucker. As we speak I am contacting my
+      <span class="tied tied-contact">secret network of spies across the USA</span> and your IP is being traced right
+      now
+      so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your
+      life.
+      You're fucking dead, kid. I can be anywhere, anytime, and I can
+      <span class="tied tied-methods">kill you in over seven hundred ways</span> and that's just with my
+      <span class="tied tied-withJust">bare hands</span>. Not only am I extensively
+      <span class="tied tied-extensive">trained in unarmed combat</span>, but I have access to
+      <span class="tied tied-but">the entire arsenal of the United States Marine Corps </span> and I will use it to its
+      full
+      extent to
+      <span class="tied tied-use">wipe your miserable ass off the face of the continent, you little shit</span>. If
+      only
+      you could have known what unholy retribution your little "clever" comment was about to bring down upon you,
+      maybe
+      you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you
+      goddamn
+      idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.
+    </p>
+  </div>
+  <div class="replycontainer">
+    <div class="sideArrows" id="sa22651024">&gt;&gt;</div>
+    <div class="reply">
+      <input type="checkbox" value="delete">
+      <span class="name">Flunky2k</span>
+      <span class="dateTime" data-utc="1309130656">8/14/2020(Fri)14:32:036 </span>
+      <span class="desktop-options"><span class="desktop-options" title="Link to this post">No. 2000</span></span>
+      <div>
+        <p>
+          If you liked this, please check out my <a href="https://github.com/acrose99">Github</a> or <a
+          href="https://twitter.com/FlunkyBot">Twitter</a> for more!
+        </p>
       </div>
     </div>
   </div>
+</div>
 <script>
+  let open = false;
+  function burgerClickOn() {
+    open = !(open)
+    if (open === true) {
+      document.getElementById("burgerMenu").style.transform = "translateX(200%)";
+      document.getElementById("burger-1").style.transform = "translate(0, -5px) rotateZ(90deg)";
+      document.getElementById("burger-2").style.transform = "translate(-12px, 0) rotateZ(0deg)";
+      document.getElementById("burger-3").style.transform = "translate(0, 5px) rotateZ(-90deg)";
+      document.getElementById("burger-1").style.width = "25px";
+      document.getElementById("burger-2").style.width = "50px";
+      document.getElementById("burger-3").style.width = "25px";
+    }
+    else {
+        document.getElementById("burgerMenu").style.transform = "translateX(-1000%)";
+        document.getElementById("burger-1").style.transform = "rotateZ(0)";
+        document.getElementById("burger-2").style.transform = "translate(0, 0) rotateZ(0)";
+        document.getElementById("burger-3").style.transform = "rotateZ(0)";
+        document.getElementById("burger-1").style.width = "42px";
+        document.getElementById("burger-2").style.width = "35px";
+        document.getElementById("burger-3").style.width = "42px";
+        document.getElementById("burgerMenu").style.minWidth = '0';
+      }
+  }
+  function variantChange(variant) {
+    if (variant === "original") {
+      document.getElementById("fill-person").value = "you little bitch";
+      document.getElementById("fill-graduated").value = "Navy Seals)";
+      document.getElementById("fill-raids").value = "Al-Quaeda";
+      document.getElementById("fill-number").value = "300 confirmed kills";
+      document.getElementById("fill-trained").value = "gorilla warfare";
+      document.getElementById("fill-top").value = "the entire US armed forces";
+      document.getElementById("fill-target").value = "target";
+      document.getElementById("fill-contact").value = "secret network of spies across the USA";
+      document.getElementById("fill-methods").value = "kill you in over seven hundred ways";
+      document.getElementById("fill-withJust").value = "bare hands"
+      document.getElementById("fill-extensive").value = "trained in unarmed combat";
+      document.getElementById("fill-but").value = "the entire arsenal of the United States Marine Corps";
+      document.getElementById("fill-use").value = "wipe your miserable ass off the face of the continent, you little shit";
+    }
+    else if (variant === "christian") {
+      document.getElementById("fill-person").value = "you little sinner";
+      document.getElementById("fill-graduated").value = "Bible School";
+      document.getElementById("fill-raids").value = "Atheists";
+      document.getElementById("fill-number").value = "300 confirmed soul savings";
+      document.getElementById("fill-trained").value = "New Testament apologetics";
+      document.getElementById("fill-top").value = "the top converter in the entire Baptist Church";
+      document.getElementById("fill-target").value = "sinnin’ atheist";
+      document.getElementById("fill-contact").value = "secret network of deacons across the USA";
+      document.getElementById("fill-methods").value = "bring you to Jesus in over 700 different ways";
+      document.getElementById("fill-withJust").value = "bare bible verses"
+      document.getElementById("fill-extensive").value = "trained in hermeneutics";
+      document.getElementById("fill-but").value = "the entire hymnal collection of the Protestant Church";
+      document.getElementById("fill-use").value = "to see that you know who the Lord Jesus is";
+    }
+    else if (variant === "hacker") {
+      document.getElementById("fill-person").value = "you little bitch";
+      document.getElementById("fill-graduated").value = "MIT";
+      document.getElementById("fill-raids").value = "with Anonymous";
+      document.getElementById("fill-number").value = "300 confirmed confirmed DDoSes";
+      document.getElementById("fill-trained").value = "online trolling";
+      document.getElementById("fill-top").value = "the top hacker in the entire world";
+      document.getElementById("fill-target").value = "virus host";
+      document.getElementById("fill-contact").value = "secret network of botnets";
+      document.getElementById("fill-methods").value = "hack into your files in over seven hundred ways";
+      document.getElementById("fill-withJust").value = "bare hands"
+      document.getElementById("fill-extensive").value = "trained in hacking";
+      document.getElementById("fill-but").value = "entire arsenal of every piece of malware ever created";
+      document.getElementById("fill-use").value = "wipe your miserable ass off the face of the world wide web";
+    }
+      triggerKeyDown()
+    }
+    function triggerKeyDown() {
+      $("#fill-person").keydown();
+      $("#fill-graduated").keydown();
+      $("#fill-raids").keydown();
+      $("#fill-number").keydown();
+      $("#fill-trained").keydown();
+      $("#fill-top").keydown();
+      $("#fill-target").keydown();
+      $("#fill-contact").keydown();
+      $("#fill-methods").keydown();
+      $("#fill-withJust").keydown();
+      $("#fill-extensive").keydown();
+      $("#fill-but").keydown();
+      $("#fill-use").keydown();
+    }
+
   const clipboard = new ClipboardJS('.btn');
 </script>
 </body>

@@ -29,6 +29,8 @@ $(function() {
   //Register an event handler on update
   function registerUpdateHandler(name, handler) {
     getFillElement(name).keyup(handler);
+    getFillElement(name).keydown(handler);
+
   }
 
   //Get the filled text
@@ -51,3 +53,4 @@ $(function() {
   }
   registerFillUpdates();
 });
+//burger animations
