@@ -1,0 +1,49 @@
+.nav {
+    width: 100vw;
+    height: 5vh;
+    border-bottom: 2px solid #e7e5e4;
+}
+.links {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.link {
+    color: #0070f3;
+}
+.linkContainer {
+    align-self: center;
+}
+.home {
+    vertical-align: center;
+}
+/*Galaxy S9+ and Android */
+@media screen and (max-width: 360px) and (max-width: 375px) {
+    .linkContainer {
+        font-size: 11px;
+        margin-left: 10px;
+    }
+}
+
+/*iPhone 6,7,8, X */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    .linkContainer {
+        font-size: 11px;
+        margin-left: 10px;
+    }
+}
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 414px) and (max-width: 768px) {
+    .linkContainer {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+/* iPad and up */
+@media screen and (min-width: 768px){
+    .linkContainer {
+        font-size: 1.2em;
+        margin-left: 5%;
+    }
+}

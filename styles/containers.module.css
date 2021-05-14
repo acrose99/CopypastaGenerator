@@ -1,0 +1,16 @@
+.copypasta {
+    text-align: initial;
+    font-size: 1em;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.span {
+    color: black;
+    background: #cccccc;
+}
+.header {
+    color: #0070f3;
+}
